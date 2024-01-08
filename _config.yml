@@ -1,0 +1,80 @@
+# markdown: kramdown
+
+# URL of the Site
+url: ''
+# Base URL of the Site (i.e., Name of the Repository in which the Site is hosted)
+baseurl: 
+
+# Title of the Site
+title: Decible Testing
+# Description of the Site
+description: customizable web
+# URL of Image of the Site
+site-image: /decible.github.io/assets/images/meta.jpg
+# URL for the Image of custom Favicon
+favicon-url: 
+
+# URL of the Image of Homepage (i.e., the image in the background of the very first section of the Homepage)
+bgimage: https://www.gbm.hsbc.com/-/media/media/gbm-global/images/campaign/ai-campaign-banner.jpg?h=1386&iar=0&w=2880&hash=71178AAA924B7AAC8421B35C78841107
+
+# Google Analytics
+# google-analytics: UA-163806439-1
+
+# Disqus
+disqus-shortname: amberli
+
+# Name of the Author
+author-name: Amber
+# URL for the Image of the Author
+author-image: https://www.shutterstock.com/image-photo/portrait-funny-curious-cat-scottish-600nw-2152074937.jpg
+# 60 Words About the Author
+author-about: Testing...
+# URL to the Author's Profile (i.e., Github, Twitter, Stackoverflow, etc)
+author-url: https://github.com/amberli-80486
+
+# SASS
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Build settings
+plugins:
+  - jekyll-admin
+  - jekyll-feed
+
+# Permalink
+permalink: "blog/:title"
+
+# Compress
+compress_html:
+  clippings: all
+
+# Defaults
+defaults:
+  -
+    scope:
+      type: 'posts'
+    values:
+      layout: post
+      post-image: ""
+      description: ""
+      tags:
+        - ""
+  -
+    scope:
+      type: 'pages'
+    values:
+      layout: page
+
+# Exclude
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
